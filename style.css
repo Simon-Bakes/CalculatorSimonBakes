@@ -1,0 +1,49 @@
+body{
+    background: darkgray;
+    margin: 0;
+    padding: 0;
+    background-image: url('windows11.jpg');
+}
+#output{
+    padding: 20px;
+    height: 10px;
+    width: 155px;
+    font-size: 20px;
+    border-color: black; 
+    color: white;
+    background-color: rgb(78, 77, 77);  
+}
+button{
+    background-color: rgb(78, 77, 77);
+    font-size: 20px;
+    height: 35px;
+    width: 50px;
+    float: left;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #354fe3;
+}
+.row0{
+    padding: 20px;
+}
+.row1{
+    padding: 20px; 
+}
+.row2{
+    padding: 20px;
+}
+.row3{
+    padding: 20px;
+}
+.row4{
+    padding: 20px;
+}
+.row5{
+    padding: 20px;
+}
+.row6{
+    padding: 20px;
+}
