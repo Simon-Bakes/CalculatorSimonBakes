@@ -1,4 +1,4 @@
-let x;
+/*let x;
 let y;
 
 function part1(){
@@ -22,4 +22,4 @@ function backspace(){
 }
 function numCode(buttonValue) {
     document.getElementById("output").value += buttonValue;
-}
+}*/
