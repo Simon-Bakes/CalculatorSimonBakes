@@ -8,46 +8,54 @@
     <script src="javascript.js"></script>
 </head>
 <body>
+<div class="back">
+<div class="title">
+    <p style="color: white; margin-left: 30px;">Calculator</p>
+</div>
+<div class="standard">
+    <p style="color: white; margin-left: 30px;">Standard</p>
+</div>
 <div class="calculator">
     <div class="row0">
-        <input type="text" id="output" value=""> 
+        <input disabled type="text" id="output" value=""> 
     </div>
     <div class="row1">
-        <div class="percentage"><button>%</button></div>
-        <div class="allclear"><button onclick="clear()">CE</button></div>
-        <div class="clear"><button onclick="clear()">C</button></div>
-        <div class="backs"><button onclick="clear()">BS</button></div>
+        <button>%</button>
+        <button onclick="clearCode()">CE</button>
+        <button onclick="clearCode()">C</button>
+        <button onclick="backspace()">BS</button>
     </div>
     <div class="row2">
-        <div class="1div"><button>1/x</button></div>
-        <div class="power"><button>x<sup>2</sup></button></div>
-        <div class="sqrtrt"><button>&radic;x</button></div>
-        <div class="division"><button>÷</button></div>
+        <button>1/x</button>
+        <button>x<sup>2</sup></button>
+        <button>&radic;x</button>
+        <button onclick="numCode('÷');part1()">÷</button>
     </div>
     <div class="row3">
-        <div class="seven"><button>7</button></div>
-        <div class="eight"><button>8</button></div>
-        <div class="nine"><button>9</button></div>
-        <div class="multiply"><button>x</button></div>
+        <button onclick="numCode('7')">7</button>
+        <button onclick="numCode('8')">8</button>
+        <button onclick="numCode('9')">9</button>
+        <button style="background-color: #2D333C" onclick="numCode('x');part1()">x</button>  
     </div>
     <div class="row4">
-        <div class="four"><button>4</button></div>
-        <div class="five"><button>5</button></div>
-        <div class="six"><button>6</button></div>
-        <div class="minus"><button>-</button></div>
+        <button onclick="numCode('4')">4</button>
+        <button onclick="numCode('5')">5</button>
+        <button onclick="numCode('6')">6</button>
+        <button style="background-color: #2D333C" onclick="numCode('-')">-</button>
     </div>
     <div class="row5">
-        <div class="one"><button>1</button></div>
-        <div class="two"><button>2</button></div>
-        <div class="three"><button>3</button></div>
-        <div class="plus"><button>+</button></div>
+        <button onclick="numCode('1')">1</button>
+        <button onclick="numCode('2')">2</button>
+        <button onclick="numCode('3')">3</button>
+        <button style="background-color: #2D333C" onclick="numCode('+')">+</button>
     </div>
     <div class="row6">
-        <div class="plusminus"><button>+/-</button></div>
-        <div class="zero"><button>0</button></div>
-        <div class="point"><button>.</button></div>
-        <div class="equals"><button onclick="calculatorCode()">=</button></div>
+        <button>+/-</button>
+        <button onclick="numCode('0')">0</button>
+        <button onclick="numCode('.')">.</button>
+        <button style="background-color: #354fe3;" onclick="equalsCode()">=</button>
     </div>
+</div>
 </div>
 </body>
 </html>
