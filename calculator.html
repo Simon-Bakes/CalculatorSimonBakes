@@ -10,50 +10,55 @@
 <body>
 <div class="back">
 <div class="title">
-    <p style="color: white; margin-left: 30px;">Calculator</p>
+    <img id="imagewin" src="windowscal.png" style="height: 16px; width: 16px; margin-left: 5px;">
+    <p>Calculator</p>
+    <button style="border-radius: 0 20% 0 0;" id="close">x</button>
+    <button>&#x25A1;</button>
+    <button>-</button>
 </div>
 <div class="standard">
-    <p style="color: white; margin-left: 30px;">Standard</p>
+    <button>☰</button>
+    <p>Standard</p>
 </div>
 <div class="calculator">
     <div class="row0">
-        <input disabled type="text" id="output" value=""> 
+        <input placeholder="0" disabled type="text" id="output" value=""> 
     </div>
     <div class="row1">
         <button>%</button>
         <button onclick="clearCode()">CE</button>
         <button onclick="clearCode()">C</button>
-        <button onclick="clearCode()">BS</button>
+        <button onclick="backspace()">BS</button>
     </div>
     <div class="row2">
         <button>1/x</button>
         <button>x<sup>2</sup></button>
         <button>&radic;x</button>
-        <button onclick="numCode('÷');part1()">÷</button>
+        <button onclick="numCode('÷')">÷</button>
     </div>
     <div class="row3">
         <button onclick="numCode('7')">7</button>
         <button onclick="numCode('8')">8</button>
         <button onclick="numCode('9')">9</button>
-        <button style="background-color: #2D333C" onclick="numCode('x');part1()">x</button>  
+        <button id="hover1" onclick="numCode('x')" >x</button>  
     </div>
     <div class="row4">
         <button onclick="numCode('4')">4</button>
         <button onclick="numCode('5')">5</button>
         <button onclick="numCode('6')">6</button>
-        <button style="background-color: #2D333C" onclick="numCode('-')">-</button>
+        <button id="hover2" onclick="numCode('-')">-</button>
     </div>
     <div class="row5">
         <button onclick="numCode('1')">1</button>
         <button onclick="numCode('2')">2</button>
         <button onclick="numCode('3')">3</button>
-        <button style="background-color: #2D333C" onclick="numCode('+')">+</button>
+        <button id="hover3" onclick="numCode('+')">+</button>
     </div>
     <div class="row6">
         <button>+/-</button>
         <button onclick="numCode('0')">0</button>
         <button onclick="numCode('.')">.</button>
-        <button style="background-color: #354fe3;" onclick="equalsCode()">=</button>
+        <button id="equals" onclick="equalsCode()">=</button>
     </div>
 </div>
 </div>

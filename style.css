@@ -15,12 +15,13 @@ body{
     text-align: right;
     border: 0px solid;
 }
-.row1 button, .row2 button{
-    background-color: #2D333C;
+#imagewin{
+    padding: 10px;
+    float: left;
 }
-button{
+.calculator button{
     background-color: #363C44;
-    font-size: 20px;
+    font-size: 15px;
     height: 48px;
     width: 75px;
     float: left;
@@ -32,7 +33,7 @@ button{
     margin: 1px;
 }
 button:hover{
-    background-color: #354fe3;
+    background-color: #2D333C;
 }
 .back{
     background-color: #1B2128;
@@ -44,16 +45,52 @@ button:hover{
 }
 .title{
     height: 30px;
-    margin-bottom: 5px;
 }
 .title p{
-    font-size: 15px;
-    padding: 5px;
+    font-size: 12px;
+    float: left;
+    color: white;
+}
+.title button{
+    float: right;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #1B2128;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 0px solid;
+    color: white;
+}
+.title button:hover{
+    background-color: #2D333C;
 }
 .standard{
     height: 30px;
-    font-size: 23px;
-    margin-top: -15px;
+    font-size: 20px;
+    color: white;
+}
+.standard p{
+    margin-top: 2px;
+    padding-right: 40px;
+}
+#close:hover{
+    background-color: rgb(253, 32, 32);
+}
+.standard button{
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    border: 0px solid;
+    background-color: #1B2128;
+    transition-duration: 0.4s;
+    float: left;
+    margin-left: -88px;
+}
+.standard button:hover{
+    background-color: #2D333C;
+    border-radius: 15%;
 }
 .row0,
 .row1,
@@ -63,5 +100,29 @@ button:hover{
 .row5,
 .row6 {
     padding: 5px;
-    padding-top: 20px;
+    padding-top: 24px;
+    padding-left: -2px;
+    margin-left: 2px;
+}
+.row1 button, .row2 button{
+    background-color: #2D333C;
+}
+.row1 button:hover, .row2 button:hover{
+    background-color: #363C44;
+}
+#equals{
+    background-color: #4CC2FF;
+    color: black;
+}
+#equals:hover{
+    background-color: #47B1E9;
+}
+#hover1, #hover2, #hover3{
+    background-color: #2D333C;
+}
+#hover1:hover, #hover2:hover, #hover3:hover{
+    background-color: #363C44;
+}
+::placeholder {
+    color: white;
 }
