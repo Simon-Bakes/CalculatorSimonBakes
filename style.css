@@ -133,7 +133,6 @@
         background-color: #2A2E31;
     }
 
-
     #output{
         width: 100%;
         height: 18%;
@@ -214,6 +213,8 @@
     .buttongray:hover{
         background-color: #363C43 !important;
     }
+
+
     #equals{
         background-color: #4CC2FF !important;
     }
