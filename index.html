@@ -33,6 +33,7 @@
             </button>
         </div>
         <div style="clear:both" id="output">
+            <input id="outputHistory" readonly></input>
             <input id="outputNum" readonly placeholder="0"></input>
         </div>
         <div id="functions">
@@ -51,19 +52,19 @@
             <button class="buttongray"><sup>&#8321;</sup>/&#119909;</button>
             <button class="buttongray">&#119909;<sup>&#8322;</sup></button>
             <button class="buttongray">&#178;&#8730;&#119909;</button>
-            <button onclick="updateOutputNum('/')" class="buttongray">&#247;</button>
+            <button onclick="updateOutputNum('&#247;');div()" class="buttongray">&#247;</button>
             <button onclick="updateOutputNum('7')">7</button>
             <button onclick="updateOutputNum('8')">8</button>
             <button onclick="updateOutputNum('9')">9</button>
-            <button onclick="updateOutputNum('*')" class="buttongray">&#215;</button>
+            <button onclick="updateOutputNum('&#215;');multi()" class="buttongray">&#215;</button>
             <button onclick="updateOutputNum('4')">4</button>
             <button onclick="updateOutputNum('5')">5</button>
             <button onclick="updateOutputNum('6')">6</button>
-            <button onclick="updateOutputNum('-')" class="buttongray">-</button>
+            <button onclick="updateOutputNum('-');sub()" class="buttongray">-</button>
             <button onclick="updateOutputNum('1')">1</button>
             <button onclick="updateOutputNum('2')">2</button>
             <button onclick="updateOutputNum('3')">3</button>
-            <button onclick="updateOutputNum('+')" class="buttongray">&#43;</button>
+            <button onclick="updateOutputNum('+');add()" class="buttongray">+</button>
             <button onclick="plusminusOutputNum()">&#8314;/&#8331;</button>
             <button onclick="updateOutputNum('0')">0</button>
             <button onclick="updateOutputNum('.')">.</button>

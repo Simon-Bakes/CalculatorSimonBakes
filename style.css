@@ -143,11 +143,21 @@
     #outputNum{
         color: white;
         font-weight: bold;
-        height: 90%;
+        height: 70%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
         border: none;
         font-size: 300%;
+        text-align: right;
+    }
+    #outputHistory{
+        color: rgb(130, 127, 127);
+        font-weight: bold;
+        height: 30%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 120%;
         text-align: right;
     }
 
