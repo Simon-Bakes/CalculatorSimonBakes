@@ -1,128 +1,212 @@
-body{
-    background: darkgray;
-    margin: 0;
-    padding: 0;
-    background-image: url('windows11.jpg');
-    font-family: 'Segoe UI';
-}
-#output{
-    padding: 20px;
-    width: 266px;
-    height: 40px;
-    font-size: 40px;
-    color: white;
-    background-color: #1B2128;  
-    text-align: right;
-    border: 0px solid;
-}
-#imagewin{
-    padding: 10px;
-    float: left;
-}
-.calculator button{
-    background-color: #363C44;
-    font-size: 15px;
-    height: 48px;
-    width: 75px;
-    float: left;
-    color: white;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10%;
-    border: 0px solid;
-    margin: 1px;
-}
-button:hover{
-    background-color: #2D333C;
-}
-.back{
-    background-color: #1B2128;
-    width: 320px;
-    margin-left: 43%;
-    margin-top: 15%;
-    height: 500px;
-    border-radius: 2%;
-}
-.title{
-    height: 30px;
-}
-.title p{
-    font-size: 12px;
-    float: left;
-    color: white;
-}
-.title button{
-    float: right;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #1B2128;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border: 0px solid;
-    color: white;
-}
-.title button:hover{
-    background-color: #2D333C;
-}
-.standard{
-    height: 30px;
-    font-size: 20px;
-    color: white;
-}
-.standard p{
-    margin-top: 2px;
-    padding-right: 40px;
-}
-#close:hover{
-    background-color: rgb(253, 32, 32);
-}
-.standard button{
-    color: white;
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    border: 0px solid;
-    background-color: #1B2128;
-    transition-duration: 0.4s;
-    float: left;
-    margin-left: -88px;
-}
-.standard button:hover{
-    background-color: #2D333C;
-    border-radius: 15%;
-}
-.row0,
-.row1,
-.row2,
-.row3,
-.row4,
-.row5,
-.row6 {
-    padding: 5px;
-    padding-top: 24px;
-    padding-left: -2px;
-    margin-left: 2px;
-}
-.row1 button, .row2 button{
-    background-color: #2D333C;
-}
-.row1 button:hover, .row2 button:hover{
-    background-color: #363C44;
-}
-#equals{
-    background-color: #4CC2FF;
-    color: black;
-}
-#equals:hover{
-    background-color: #47B1E9;
-}
-#hover1, #hover2, #hover3{
-    background-color: #2D333C;
-}
-#hover1:hover, #hover2:hover, #hover3:hover{
-    background-color: #363C44;
-}
-::placeholder {
-    color: white;
-}
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        color: white;
+        font-family: 'Segoe UI';
+    }   
+    #calculator{
+        margin: 10% auto;
+        background-color: #1D2024;
+        border-radius: 2%;
+        width: 320px;
+        height: 500px;
+        box-shadow: 0 0 15px 7px gray;
+    }
+    img{
+        width: 14px;
+        height: 16px;
+        padding-left: 18px;
+        padding-top: 6px;
+    }
+    #icon{
+        width: 15%;
+        height: 6%;
+        float: left;
+    }
+    ::placeholder {
+        color: white;
+    }
+
+
+    #app{
+        width: 40%;
+        height: 6%;
+        float: left;
+        font-size: 80%;
+    }
+    #app p{
+        padding-top: 6px;
+        margin: 0;
+    }
+
+
+    #nav-buttons{
+        width: 45%;
+        height: 6%;
+        float: left;    
+    }
+    #nav-buttons button{
+        width: 33.3334%;
+        height: 100%;
+        float: left; 
+        transition-duration: 0.1s;   
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: none; 
+    }
+    #nav-buttons #closeB:hover{
+        background-color: red;
+        transition-duration: 0.1s;
+        border-radius: 0% 18% 0% 0%;    
+    }
+    #nav-buttons button:hover{
+        background-color: #2A2E31;   
+    }
+    #nav-buttons span{
+        font-size: 120%;
+    }
+
+
+    #menu{
+        width: 15%;
+        height: 10%;
+        float: left;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    #menu button{
+        height: 30px;
+        width: 35px;
+        margin-left: 6px;
+        border-radius: 10%;
+        transition-duration: 0.1s;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+    #menu span{
+        color: white;
+        padding-top: 2px;
+    }
+    #menu button:hover{
+        background-color: #2A2E31;
+    }
+
+
+    #type-cal{
+        width: 40%;
+        height: 10%;
+        float: left;
+        font-weight: bold;
+        font-size: 117%;
+    }
+    #type-cal p{
+        padding-top: 12px;
+        margin: 0;
+    }
+
+
+    #history{
+        width: 45%;
+        height: 10%;
+        float: left;
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 7px;
+        box-sizing: border-box;   
+    }
+    #history span{
+        color: white;
+    }
+    #history button{
+        height: 30px;
+        width: 30px;
+        border-radius: 10%;
+        padding-top: 4px;
+        padding-left: 4px;
+        transition-duration: 0.1s;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+    #history button:hover{
+        background-color: #2A2E31;
+    }
+
+
+    #output{
+        width: 100%;
+        height: 18%;
+        box-sizing: border-box;
+        padding-right: 5px;
+    }
+    #outputNum{
+        color: white;
+        font-weight: bold;
+        height: 90%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 300%;
+        text-align: right;
+    }
+
+
+    #functions{
+        width: 100%;
+        height: 6%;
+    }
+    #functions button{
+        margin: 0 1px;
+        width: 16%;
+        height: 100%;
+        float: left; 
+        transition-duration: 0.1s;   
+        color: white;
+        border-radius: 10%;
+        background-color: rgba(0, 0, 0, 0);
+        border: none; 
+    }
+    #functions button:hover{  
+        background-color: #2A2E31; 
+    }
+
+
+    #buttons{
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #buttons button{
+        background-color: #363C43;
+        border: none;
+        height: 46px;
+        width: 95%;
+        margin-left: 1px;
+        margin-right: 1px;  
+        transition-duration: 0.1s;
+        border-radius: 8%;
+        color: white;
+        font-size: 120%;
+    }
+    #buttons button:hover{
+        background-color: #2F3339;
+    }
+    .buttongray{
+        background-color: #2F3339 !important;
+    }
+    .buttongray:hover{
+        background-color: #363C43 !important;
+    }
+    #equals{
+        background-color: #4CC2FF !important;
+    }
+    #equals:hover{
+        background-color: lightblue !important;
+    }
